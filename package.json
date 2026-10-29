@@ -1,0 +1,12 @@
+{
+  "name": "zyvora-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ZYVORA luxury marketplace storefront and local order API",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
