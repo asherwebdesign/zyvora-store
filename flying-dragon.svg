@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" fill="none">
+ <defs>
+  <linearGradient id="scale" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffcf7a"/><stop offset=".28" stop-color="#a91b22"/><stop offset=".68" stop-color="#25090b"/><stop offset="1" stop-color="#ff4c26"/></linearGradient>
+  <linearGradient id="fire" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff341e" stop-opacity="0"/><stop offset=".45" stop-color="#ff5c22"/><stop offset=".75" stop-color="#ffc46a"/><stop offset="1" stop-color="#ff2419" stop-opacity="0"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ </defs>
+ <g id="flames" filter="url(#glow)" opacity=".85" stroke="url(#fire)" stroke-width="9" stroke-linecap="round"><path d="M100 365 C260 320 300 430 440 365 S690 330 830 370 S1020 385 1170 310"/><path d="M90 390 C250 355 320 450 480 390 S740 350 890 400 S1050 390 1180 345" stroke-width="4"/></g>
+ <g id="dragon" stroke-linejoin="round" stroke-linecap="round">
+  <!-- long, coiling body -->
+  <path d="M130 380 C245 470 330 430 420 345 C500 270 500 180 600 170 C700 158 775 245 840 235 C900 225 930 170 960 125" stroke="#1b0709" stroke-width="72"/>
+  <path d="M130 380 C245 470 330 430 420 345 C500 270 500 180 600 170 C700 158 775 245 840 235 C900 225 930 170 960 125" stroke="url(#scale)" stroke-width="48"/>
+  <path d="M150 380 C260 455 330 410 420 335 C500 260 515 195 600 185 C700 175 780 260 840 250" stroke="#ffb45b" stroke-opacity=".65" stroke-width="3" stroke-dasharray="4 13"/>
+  <!-- near wing, articulated to flap -->
+  <g class="wing wing-back" transform-origin="640px 205px">
+   <path d="M645 210 C590 100 525 55 430 35 C470 95 445 105 365 85 C410 145 455 160 485 215 C530 198 570 205 645 210Z" fill="#180609" stroke="#b31b26" stroke-width="8"/>
+   <path d="M620 204 L435 42 M592 204 L373 94 M550 202 L480 160" stroke="#e43a32" stroke-width="5"/>
+  </g>
+  <g class="wing wing-front" transform-origin="720px 210px">
+   <path d="M710 210 C750 105 835 55 940 50 C900 105 940 120 1010 100 C980 160 915 190 860 225 C810 205 760 205 710 210Z" fill="#230609" stroke="#e12b2e" stroke-width="8"/>
+   <path d="M730 208 L930 60 M785 210 L1000 110 M840 216 L920 175" stroke="#ff7a39" stroke-width="5"/>
+  </g>
+  <!-- neck, horns, head -->
+  <path d="M835 238 C875 215 900 170 925 140 L968 111 C1005 105 1040 123 1060 147 L1110 160 L1080 180 L1097 202 L1052 204 L1020 230 L980 221 L954 249 L927 226Z" fill="url(#scale)" stroke="#180609" stroke-width="12"/>
+  <path d="M945 139 L916 90 L966 119 M1000 122 L1002 75 L1031 125 M1047 146 L1083 129" stroke="#d7a15c" stroke-width="12"/>
+  <path d="M1044 158 L1072 168 L1050 174Z" fill="#fff0b0" filter="url(#glow)"/>
+  <path d="M1052 159 L1067 166" stroke="#ff2c16" stroke-width="7" filter="url(#glow)"/>
+  <path d="M1080 190 L1125 196 L1090 207" stroke="#ff7a38" stroke-width="6"/>
+  <path d="M960 210 L980 245 L1002 216 L1020 239 L1037 202" stroke="#ffb15a" stroke-width="6"/>
+  <!-- tail spikes -->
+  <path d="M175 402 L145 355 L192 380 L182 335 L220 380 L220 340 L250 390" fill="#8d111b" stroke="#ff3a2a" stroke-width="5"/>
+ </g>
+</svg>
